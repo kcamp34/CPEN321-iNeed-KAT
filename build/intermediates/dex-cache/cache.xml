@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\1e208e20cb1c00fc0284f26f3fe31fcf0ec624e7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="252896ce41f2a84a2849e29235e66098be7d12ee">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_569ad9feecbfb353d796f7a6f16d3a79202bd196\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_98a5e265299fb93500c3eb70924a8901e4b5c5ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\db05205428faf77fb437159202fda37487d14c74\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8040d53ecd4bd895360eafdc25e1c1cc9479e6aa">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4ce8d85e73508eaa80a36b558593bd00e9a3f9c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\b94bc1fe4524d4416f983da7cced77f73a399d31\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bed98ea7af8c5c4202820875e856dd3eb296e22d">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dcfc37dc091f4895ae811b5b6e0b618773a1c601\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\bec194d37bcc0c1faf32af20dce74730481eb1d5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="52339832d252da4328c5ffcacbc205268346362a">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9a98b8919d552c8379f5cfc3d4cf541863f31b90\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_caeded3170d037f9d6adeb3ce551f4c934bf4767\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\e893b8eed0eb0f97ddc0be660ed8bb1139a8e662\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bc9ea2bc291bbebc83f5b160d115c699bddc4e16">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_568bd53410fb43381d3ca72f91d56e5f1dc2b811\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\ae6e96ea82f5cca9f4569bd6f10b6a6b8f1623d9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_468f9b72c3c6f90bb23346355485d3c6d1757c3c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\cb28a57671ae0dd40b0aced56fa252aed7310355\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="73c80b05a390e8319d1ef7a236739cd610c8f774">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d58183e1da5564632a3eff500cefe557140d6456\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_88a5838587cf3d8ae7983f6c9d2e2775415cab51\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\f33cd78fd3a765cc9dd06d07ce8445c729eeb303\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_96f67d8ee85a5ceb41f96206ed0c14c9e31885bd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_5028e124ea7e5e02128d3a70dfdffa522a57b5d5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\da1a31f9c879f523b01f93cf3a0369d7928c1f49\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="643a2fd3bd06c44be5d20efc0ba4ca02036d2c8a">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d63a2093b7e2de72bedf45ccfb5b2b40e2e30db9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\edb89d407ef600cbde9d1703a853be6795f7c748\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6e6b94b72d7912a627fb1629c310b2bca9261f06">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_340aa2bb902b68815fe15582997b7715b5008595\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.7.2\20f6463eb19ac61960c5d91a094c2f4f0727dc2e\okhttp-2.7.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="20f6463eb19ac61960c5d91a094c2f4f0727dc2e">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-2.7.2_3a17366f9c2fd1a00119e9cd63e5406a404ac78c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\a1d5842095febfdf2ca9fafe51fdc0cb8b82fbc5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c2cadea4d8a1a5b5c4e5f0dc99a99a43774f5e6e">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f55040f51f2c57de17be63e011621c5e4709106c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\1fea5bb76dc5f9c6e32e91f02eff7f6b700494b6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5fce554e6b943217cc069e4b0023dbe8f2851c9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\94f4774a7f3afd315fa463ac4045bb8012f06717\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bc0d71e8828a145ca4aebde8f6897608070f8863">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4d2255164349d7b3bad05e7054a0d02634807e04\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\3d454141809f75ba7183f20e71a84b4d77dfc80d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5f519b8c692038a47ee404b6ea6b847f6402000c">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a8c8b6ce6c447fd4e508389b1ee062f4f83180cd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\7063325d4b5a2f383d6fab43a3a4b60b53d6f8ec\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="20d6aa9a18ea9833cd2bee95dff7cd303cdb80e4">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f52f66b50d9ec46e4582a1b443b1a645be6747b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.gradle\caches\modules-2\files-2.1\com.google.zxing\core\3.3.0\73c49077166faa4c3c0059c5f583d1d7bd1475fe\core-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-3.3.0_42059ed15b2d90052f4c7c752f95c08240e2e24a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\20.0\89507701249388e1ed5ddcf8c41f4ce1be7831ef\guava-20.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="89507701249388e1ed5ddcf8c41f4ce1be7831ef">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\guava-20.0_6f728f6fcaf2c1541c68df71c5e4de368c49b34e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a2d0583cb924edd5420387a5b6c7630def2e03cc">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_dff1766bfff40f0b4afeb7d44872af8e3b0cbcea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kyle\.android\build-cache\79abfea56d771a5286d6ca85ff74dcb4d76bd819\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2d45b277afdf55bcfdc005c03c0c2f1733aaa1b0">
+        <dex dex="C:\Users\Kyle\Documents\GitHub\CPEN321-KAT-iNeed\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5887c88de571df575749334f721a9cd19dc1bc43\classes.dex" />
+    </item>
+
+</items>

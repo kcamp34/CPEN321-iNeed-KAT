@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "1023682951558",
+    "firebase_url": "https://ineed-ff614.firebaseio.com",
+    "project_id": "ineed-ff614",
+    "storage_bucket": "ineed-ff614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023682951558:android:8885287541605233",
+        "android_client_info": {
+          "package_name": "com.kat.cpen321_ineed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023682951558-6sio2snac083a5pfi4no698di0ut3c8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kat.cpen321_ineed",
+            "certificate_hash": "3d75b9ec48cbb0e51338d71668122b223c7c606c"
+          }
+        },
+        {
+          "client_id": "1023682951558-q61qqibnh5ga31tie5m6e9eutee0qeb5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kat.cpen321_ineed",
+            "certificate_hash": "a26b503dd57fdbdcd1e109d87778cc51293c15af"
+          }
+        },
+        {
+          "client_id": "1023682951558-atjc85ge2ci3nkjofo4ttc22s3a5qeur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKNExkMfPykTDF9I1uG92J54pL58vDME4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023682951558-atjc85ge2ci3nkjofo4ttc22s3a5qeur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
