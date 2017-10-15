@@ -24,9 +24,16 @@
 
             <Button
                 android:id="@+id/addPostButton"
-                android:layout_width="53dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+" />
+
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="270dp"
+                android:text="Logout" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"

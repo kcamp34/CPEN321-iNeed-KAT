@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.facebook.FacebookSdk;
+import com.facebook.login.LoginManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -54,6 +56,7 @@ public class ScrollingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_scrolling);
         showAllPosts();
         this.addButtonClick();
+        this.addLogoutClick();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -66,8 +69,20 @@ public class ScrollingActivity extends AppCompatActivity {
         newPostButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               Intent newPostIntent = new Intent(ScrollingActivity.this, NewPostActivity.class);
+                Intent newPostIntent = new Intent(ScrollingActivity.this, NewPostActivity.class);
                 startActivity(newPostIntent);
+            }
+        });
+    }
+
+    private void addLogoutClick() {
+        Button logoutButton = (Button) findViewById(R.id.logoutButton);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent loginIntent = new Intent(ScrollingActivity.this, LoginActivity.class);
+                LoginManager.getInstance().logOut();
+                startActivity(loginIntent);
             }
         });
     }
