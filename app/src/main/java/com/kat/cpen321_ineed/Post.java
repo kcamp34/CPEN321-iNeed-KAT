@@ -59,14 +59,14 @@ public class Post {
     }
 
     public String getMessage(){
-        return new String(this.message);
+        return this.message;
     }
     public void setMessage(String newMessage){
         this.message = newMessage;
     }
 
     public String getName(){
-        return new String(this.name);
+        return this.name;
     }
 
     public long getUserID(){
