@@ -68,13 +68,6 @@ public class LoginActivity extends AppCompatActivity {
     private static final String[] DUMMY_CREDENTIALS = new String[]{
             "foo@example.com:hello", "bar@example.com:world"
     };
-    /**
-     * Keep track of the login task to ensure we can cancel it if requested.
-     */
-    private UserLoginTask mAuthTask = null;
-
-    // UI references.
-    private View mLoginFormView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -129,8 +122,6 @@ public class LoginActivity extends AppCompatActivity {
                     }
                 });
         setContentView(R.layout.activity_login);
-
-        mLoginFormView = findViewById(R.id.login_form);
     }
 
     private void updateWithToken(AccessToken currentAccessToken) {
