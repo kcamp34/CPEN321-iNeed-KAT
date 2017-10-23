@@ -30,7 +30,6 @@ import java.security.NoSuchAlgorithmException;
 public class LoginActivity extends AppCompatActivity {
 
     private CallbackManager callbackManager;
-    private AccessTokenTracker accessTokenTracker;
 
     /**
      * A dummy authentication store containing known user names and passwords.
@@ -64,13 +63,6 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         FacebookSdk.setApplicationId("1546303808762369");
         FacebookSdk.sdkInitialize(getApplicationContext());
-
-        accessTokenTracker = new AccessTokenTracker() {
-            @Override
-            protected void onCurrentAccessTokenChanged(AccessToken oldAccessToken, AccessToken newAccessToken) {
-                updateWithToken(newAccessToken);
-            }
-        };
 
         callbackManager = CallbackManager.Factory.create();
 
