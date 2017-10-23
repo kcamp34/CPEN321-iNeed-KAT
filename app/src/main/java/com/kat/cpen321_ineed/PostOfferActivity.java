@@ -14,7 +14,9 @@ import android.widget.TextView;
 public class MakeOfferActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void .
+
+    onCreate(Bundle savedInstanceState) {
 
         EditText mMessage = (EditText) findViewById(R.id.mMessageField);
         EditText mPrice = (EditText) findViewById(R.id.mPriceField);
