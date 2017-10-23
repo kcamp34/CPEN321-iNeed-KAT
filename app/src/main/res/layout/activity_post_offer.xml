@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/mPriceField"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Price" />
+
+    <EditText
+        android:id="@+id/mMessageField"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Message" />
+
+    <Button
+        android:id="@+id/makeOffer"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:text="Send Offer" />
+</LinearLayout>
