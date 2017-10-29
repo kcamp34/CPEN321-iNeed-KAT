@@ -32,6 +32,7 @@ public class ScrollingActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (DocumentSnapshot document : task.getResult()) {
+                                final String postId = document.getId();
                                 final Post post = document.toObject(Post.class);
                                 Button tempButton = new Button(that);
                                 tempButton.setText(post.getName());
@@ -39,7 +40,8 @@ public class ScrollingActivity extends AppCompatActivity {
                                                                   @Override
                                                                   public void onClick(View v) {
                                                                       Intent viewPostIntent = new Intent(ScrollingActivity.this, ViewPostActivity.class);
-                                                                      viewPostIntent.putExtra("id", post.getUserID());
+                                                                      viewPostIntent.putExtra("postId", postId);
+                                                                      viewPostIntent.putExtra("UserId", post.getUserID());
                                                                       viewPostIntent.putExtra("Name", post.getName());
                                                                       viewPostIntent.putExtra("Description", post.getMessage());
                                                                       viewPostIntent.putExtra("Price", post.getPrice());

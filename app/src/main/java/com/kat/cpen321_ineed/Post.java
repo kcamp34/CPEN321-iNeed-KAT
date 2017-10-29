@@ -30,7 +30,7 @@ import static android.content.ContentValues.TAG;
 
 public class Post {
 
-    private long userID = 0;
+    private String userID;
     private String name;
     private double price;
     private String message;
@@ -69,7 +69,7 @@ public class Post {
         return this.name;
     }
 
-    public long getUserID(){
+    public String getUserID() {
         return this.userID;
     }
 
