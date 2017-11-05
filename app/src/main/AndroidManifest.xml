@@ -52,6 +52,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".NewPostActivity"
+            android:exported="true"
             android:label="@string/title_activity_new_post"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
