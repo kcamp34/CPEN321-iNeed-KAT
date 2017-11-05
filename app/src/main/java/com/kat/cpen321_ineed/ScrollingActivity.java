@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.facebook.FacebookSdk;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -74,7 +75,8 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent loginIntent = new Intent(ScrollingActivity.this, LoginActivity.class);
-                LoginManager.getInstance().logOut();
+                if (FacebookSdk.isInitialized())
+                    LoginManager.getInstance().logOut();
                 startActivity(loginIntent);
             }
         });
