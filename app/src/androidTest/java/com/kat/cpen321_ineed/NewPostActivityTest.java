@@ -46,33 +46,24 @@ public class NewPostActivityTest {
             e.printStackTrace();
         }
 
-        ViewInteraction editText = onView(
+        ViewInteraction nameText = onView(
                 allOf(withId(R.id.NameField)));
-        editText.check(matches(withHint("Name")));
-
-        ViewInteraction editText2 = onView(
-                allOf(withId(R.id.DescriptionField)));
-        editText2.check(matches(withHint("Description")));
-
-        ViewInteraction editText3 = onView(
+        ViewInteraction priceText = onView(
                 allOf(withId(R.id.PriceField)));
-        editText3.check(matches(withHint("$")));
+        ViewInteraction descriptionText = onView(
+                allOf(withId(R.id.DescriptionField)));
+
+        nameText.check(matches(withHint("Name")));
+        descriptionText.check(matches(withHint("Description")));
+        priceText.check(matches(withHint("$")));
 
         ViewInteraction appCompatButton = onView(
                 allOf(withId(R.id.CreatePostButton), withText("Confirm"), isDisplayed()));
         appCompatButton.perform(click());
 
-        ViewInteraction editText4 = onView(
-                allOf(withId(R.id.NameField)));
-        editText4.check(matches(withHint("Must enter a name")));
-
-        ViewInteraction editText5 = onView(
-                allOf(withId(R.id.DescriptionField)));
-        editText5.check(matches(withHint("Must enter a description")));
-
-        ViewInteraction editText6 = onView(
-                allOf(withId(R.id.PriceField)));
-        editText6.check(matches(withHint("Must enter a price")));
+        nameText.check(matches(withHint("Must enter a name")));
+        descriptionText.check(matches(withHint("Must enter a description")));
+        priceText.check(matches(withHint("Must enter a price")));
 
         ViewInteraction appCompatEditText = onView(
                 allOf(withId(R.id.NameField), isDisplayed()));
