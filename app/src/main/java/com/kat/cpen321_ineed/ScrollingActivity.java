@@ -87,7 +87,8 @@ public class ScrollingActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent loginIntent = new Intent(ScrollingActivity.this, LoginActivity.class);
-                LoginManager.getInstance().logOut();
+                if (FacebookSdk.isInitialized())
+                    LoginManager.getInstance().logOut();
                 startActivity(loginIntent);
             }
         });
