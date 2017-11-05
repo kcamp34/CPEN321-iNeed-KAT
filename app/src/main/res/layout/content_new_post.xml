@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.kat.cpen321_ineed.NewPostActivity"
+    tools:context="com.kat.cpen321_ineed.PostActivity"
     tools:showIn="@layout/activity_new_post"
     android:orientation="vertical">
 

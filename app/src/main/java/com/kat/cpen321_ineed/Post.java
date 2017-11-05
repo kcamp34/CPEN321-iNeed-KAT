@@ -17,7 +17,9 @@ import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import static android.content.ContentValues.TAG;
@@ -43,8 +45,8 @@ public class Post {
         this.price = 0;
     }
 
-    public Post(String name, double dollars, String description){
-        // TODO do something with user id
+    public Post(String name, double dollars, String description, String userID) {
+        this.userID = userID;
         this.name = name;
         this.message = description;
         this.price = dollars;
@@ -98,5 +100,24 @@ public class Post {
                         Log.w(TAG, "Error adding document", e);
                     }
                 });
+    }
+
+    public Map<String, Object> toMap() {
+        Map<String, Object> map = new HashMap<String, Object>();
+
+        map.put("userId", userID);
+        map.put("name", name);
+        map.put("price", price);
+        map.put("message", message);
+
+        return map;
+    }
+
+    public static void editPostDB(Post post, String postId) {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        DocumentReference postRef = db.collection("Posts").document(postId);
+
+        postRef.update(post.toMap());
     }
 }

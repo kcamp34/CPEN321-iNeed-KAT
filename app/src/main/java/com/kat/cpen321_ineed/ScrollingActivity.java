@@ -77,7 +77,7 @@ public class ScrollingActivity extends AppCompatActivity {
         newPostButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent newPostIntent = new Intent(ScrollingActivity.this, NewPostActivity.class);
+                Intent newPostIntent = new Intent(ScrollingActivity.this, PostActivity.class);
                 startActivity(newPostIntent);
             }
         });

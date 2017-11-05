@@ -31,8 +31,8 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".NewPostActivity"
-            android:label="@string/title_activity_new_post"
+            android:name=".PostActivity"
+            android:label="@string/title_activity_post"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ViewPostActivity"

@@ -8,14 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.facebook.Profile;
+
 public class ViewPostActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        String name = getIntent().getStringExtra("Name");
-        String desc = getIntent().getStringExtra("Description");
-        long userID = getIntent().getLongExtra("UserId", 0);
-        double price = getIntent().getDoubleExtra("Price", 0.0);
+        final String name = getIntent().getStringExtra("Name");
+        final String desc = getIntent().getStringExtra("Description");
+        final String userID = getIntent().getStringExtra("UserId");
+        final double price = getIntent().getDoubleExtra("Price", 0.0);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_post);
@@ -42,6 +44,21 @@ public class ViewPostActivity extends AppCompatActivity {
                 startActivity(makeOfferIntent);
             }
         });
+
+        if (userID.equals(Profile.getCurrentProfile().getId())) {
+            Button editButton = (Button) findViewById(R.id.editPostButton);
+
+            editButton.setVisibility(View.VISIBLE);
+
+            editButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent editPostIntent = new Intent(ViewPostActivity.this, PostActivity.class);
+                    editPostIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                    startActivity(editPostIntent);
+                }
+            });
+        }
 
     }
 
