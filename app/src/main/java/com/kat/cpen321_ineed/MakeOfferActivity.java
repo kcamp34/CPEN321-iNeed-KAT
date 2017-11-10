@@ -24,9 +24,11 @@ public class MakeOfferActivity extends AppCompatActivity {
                 EditText message = (EditText) findViewById(R.id.mOfferMessageField);
 
                 Offer offer = new Offer(Profile.getCurrentProfile().getId(),
+                        getIntent().getStringExtra("recID"),
                         Double.parseDouble(price.getText().toString()),
                         message.getText().toString(),
-                        getIntent().getStringExtra("postId"));
+                        getIntent().getStringExtra("postId"),
+                        getIntent().getStringExtra("postName"));
 
                 offer.commitDB();
 
