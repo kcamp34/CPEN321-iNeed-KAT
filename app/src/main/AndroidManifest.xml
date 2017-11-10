@@ -42,6 +42,10 @@
             android:name=".MakeOfferActivity"
             android:label="@string/title_activity_make_offer"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SentOfferActivity"
+            android:label="@string/title_activity_offer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -41,6 +41,8 @@ public class ViewPostActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent makeOfferIntent = new Intent(ViewPostActivity.this, MakeOfferActivity.class);
                 makeOfferIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                makeOfferIntent.putExtra("postName", name);
+                makeOfferIntent.putExtra("recID", userID);
                 startActivity(makeOfferIntent);
             }
         });
