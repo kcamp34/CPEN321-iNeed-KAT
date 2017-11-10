@@ -23,7 +23,7 @@ import java.util.Set;
 
 import static android.content.ContentValues.TAG;
 
-public class SentOfferActivity extends AppCompatActivity {
+public class AllOffersActivity extends AppCompatActivity {
 
     Set<Button> sentButtons = new HashSet<>();
     Set<Button> recButtons = new HashSet<>();
@@ -80,7 +80,8 @@ public class SentOfferActivity extends AppCompatActivity {
                                 if (offer.getReceiverID() != null && offer.getReceiverID().equals(Profile.getCurrentProfile().getId())) {
                                     recButtons.add(tempButton);
                                     ((LinearLayout) findViewById(R.id.sentOfferLinLayout)).addView(tempButton);
-                                } else if (offer.getSenderID() != null && offer.getSenderID().equals(Profile.getCurrentProfile().getId())) {
+                                } // TODO add else statement here if users are not able to make offers on their own posts
+                                if (offer.getSenderID() != null && offer.getSenderID().equals(Profile.getCurrentProfile().getId())) {
                                     sentButtons.add(tempButton);
                                     ((LinearLayout) findViewById(R.id.sentOfferLinLayout)).addView(tempButton);
                                 }

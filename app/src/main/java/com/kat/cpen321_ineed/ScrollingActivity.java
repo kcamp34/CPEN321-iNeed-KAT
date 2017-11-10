@@ -101,7 +101,7 @@ public class ScrollingActivity extends AppCompatActivity {
         offerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent offerIntent = new Intent(ScrollingActivity.this, SentOfferActivity.class);
+                Intent offerIntent = new Intent(ScrollingActivity.this, AllOffersActivity.class);
                 startActivity(offerIntent);
             }
         });
