@@ -63,8 +63,9 @@ public class ScrollingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
         showAllPosts();
-        this.addButtonClick();
+        this.addPostClick();
         this.addLogoutClick();
+        this.addOfferClick();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -72,7 +73,7 @@ public class ScrollingActivity extends AppCompatActivity {
     /**
      * Opens the newPost view when the button is clicked
      */
-    private void addButtonClick(){
+    private void addPostClick() {
         Button newPostButton = (Button) findViewById(R.id.addPostButton);
         newPostButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,6 +92,17 @@ public class ScrollingActivity extends AppCompatActivity {
                 Intent loginIntent = new Intent(ScrollingActivity.this, LoginActivity.class);
                 LoginManager.getInstance().logOut();
                 startActivity(loginIntent);
+            }
+        });
+    }
+
+    private void addOfferClick() {
+        Button offerButton = (Button) findViewById(R.id.buttonViewOffer);
+        offerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent offerIntent = new Intent(ScrollingActivity.this, SentOfferActivity.class);
+                startActivity(offerIntent);
             }
         });
     }
