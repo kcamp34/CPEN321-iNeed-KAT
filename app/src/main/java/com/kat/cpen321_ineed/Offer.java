@@ -11,27 +11,40 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import static android.content.ContentValues.TAG;
 
 public class Offer {
-    private String userID;
+    private String postName;
+    private String senderID;
+    private String receiverID;
     private double price;
     private String message;
     private String postID;
 
+
     private Offer() {
     }
 
-    public Offer(String userID, double price, String message, String postID) {
-        this.userID = userID;
+    public Offer(String senderID, String receiverID, double price, String message, String postID, String postName) {
+        this.postName = postName;
+        this.senderID = senderID;
+        this.receiverID = receiverID;
         this.price = price;
         this.message = message;
         this.postID = postID;
     }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
+    public void setSenderID(String sendID) {
+        this.senderID = sendID;
     }
 
-    public String getUserID() {
-        return this.userID;
+    public String getSenderID() {
+        return this.senderID;
+    }
+
+    public void setReceiverID(String recID) {
+        this.receiverID = recID;
+    }
+
+    public String getReceiverID() {
+        return this.receiverID;
     }
 
     public void setPrice(double price) {
@@ -56,6 +69,10 @@ public class Offer {
 
     public String getPostID() {
         return this.postID;
+    }
+
+    public String getPostName() {
+        return this.postName;
     }
 
     public void commitDB() {

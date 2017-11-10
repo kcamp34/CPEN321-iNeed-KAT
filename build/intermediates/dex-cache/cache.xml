@@ -3,354 +3,48 @@
 
     <item
         is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/7538983b871d89766020361f79e34e98f69c804f/output/jars/classes.jar"
+        jar="C:\Users\Andrew\.android\build-cache\3727ea9c477a909c134d74db3f8f7aba751eb7b7\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9c44b26a4884e461afdc9477cfb04afc693519d5/classes.dex" />
+        sha1="287f4dec8dc2d40a238b12562b437438499cd2fb">
+        <dex dex="C:\Users\Andrew\workspace\Android Studio\CPEN321\CPEN321-iNeed-KAT\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_95e8b5728fb8b6ee4c79ff511945dcf60a7c1bcb\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Tyler/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_b3df825cf393c7c0f321cc491cb4738fe4ec740e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/4edacb819349d34c10e8c900a517955180748a5d/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_16744e9fd61a8d2c4fe41a9a1dac4e70bf80f6b8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/59d63f53b00adb63f193990530e4dd549ffa141b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_328857c55eefdce89ce25d0ccba55669dbb668b4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_35082a61a993cac18150eb8ecfebf2b61a45877a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/1fca66b0933ac973ff69b42997afd8cf46e4799d/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_16ff7ea4b56c23d68aeea84e0dbcacd1ac87b33f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/91711c83b6d561d19e53853052c3c5ad01c963aa/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="5f519b8c692038a47ee404b6ea6b847f6402000c">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4ac504d6e2b9273eee681018db6444c80da21af4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/477b0fae68adfc071d2a909a1dce8abc7d4805b5/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="2d45b277afdf55bcfdc005c03c0c2f1733aaa1b0">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5b22714c7fee0fdfa39f7377c45d3fcb5af82a4e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.2/20f6463eb19ac61960c5d91a094c2f4f0727dc2e/okhttp-2.7.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="20f6463eb19ac61960c5d91a094c2f4f0727dc2e">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-2.7.2_14872ce8e0822c1e65caae7ae1785da295759c03/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="98476622f10715998eacf9240d6b479f12c66143">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.6.0_ec9df01ff2ddc231a004b591976c4c3d45b346b6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/8acb5f1053a5af7501d3e54f54830f82735b512b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="8040d53ecd4bd895360eafdc25e1c1cc9479e6aa">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2a2be8567531a621cbf9f2dc7e745f78eac6cc7a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/23e92fd250bdabbd1b9a5d5d1631e5116cf8696b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c2f490556e77eab1b0f04c132ab49cd2d4f3e65f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/6602815f8b3e9ce58844997a00b5dbc8018d761c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="52339832d252da4328c5ffcacbc205268346362a">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6c1a41f14bb0025ca29b64ce9c9862c0409210a3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_86eb78cefcf2c18078cffe1a481217bc63a70cba/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/1d7c0c20e196af0dd54c14fd41d6088a916618cb/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c3d0e98e1a43fc11ad2e448f85399f5b67abfeaf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/f188178ace86d396d2b61265efd734ad31c043c7/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="95519720620b553f63afc789beba9ad582807f7c">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_82081a233ad54f6c0afdff8b40ee6c3198e74597/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/006430dbecf694fabccd9bd964c2dbaeedbb2188/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2a83324aa2aa0fdbae46be2738c744fe677e33c6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.0.2/b9cd8fc6bd15cb915735d34535db30ece0c44603/constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_9aa6fe5f6e058ac4207f6502476df535d59d223c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/f0d6f74a3b0d48914065e70f1292593c705f4e3b/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="c2cadea4d8a1a5b5c4e5f0dc99a99a43774f5e6e">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3751c2a4ee22a43c67fa4ac77d92246455edf96e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/fded4de212721c39429f559747929b3b3b736a20/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_be5baaf4689c0d7a1524513c42c91fdea4bfe9ff/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/03104b01e48f7462c611c79e5bfc0c621eebdc53/output/jars/classes.jar"
+        jar="C:\Users\Andrew\.android\build-cache\0bb902700e31aa8dd12a6d1512bc07faaf0a2862\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
         sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_05fef0e0e2488b0dcd6dd3636e836bb9b3327cce/classes.dex" />
+        <dex dex="C:\Users\Andrew\workspace\Android Studio\CPEN321\CPEN321-iNeed-KAT\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_30694d740f24973d060fc2c3c3dfa664c971d085\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/5563fa2139ee17a778c8a75e411c9e6edc9dd28c/output/jars/classes.jar"
+        jar="C:\Users\Andrew\workspace\Android Studio\CPEN321\CPEN321-iNeed-KAT\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="643a2fd3bd06c44be5d20efc0ba4ca02036d2c8a">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e5a0f9dd174d0a9ce6fea7329df13dcb1417eaac/classes.dex" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Andrew\workspace\Android Studio\CPEN321\CPEN321-iNeed-KAT\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_f8db37375ce9a914595d7724bb4dcae3014e1fbd\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/19a61d99605cb00b4659c9161d4b48b786cf24fe/output/jars/classes.jar"
+        jar="C:\Users\Andrew\workspace\Android Studio\CPEN321\CPEN321-iNeed-KAT\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="20d6aa9a18ea9833cd2bee95dff7cd303cdb80e4">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_15aa2edcc4f43d829f03b9ba0cfef5e71d6eb942/classes.dex" />
+        sha1="1b4775108cd9237980cda590bb514583b10dd6be">
+        <dex dex="C:\Users\Andrew\workspace\Android Studio\CPEN321\CPEN321-iNeed-KAT\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1ac41d2fe992f4f0a0fed70f0f471c603cbb6486\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/611fcefbd9bf4e515579113e7e11509cf79bb7d0/output/jars/classes.jar"
+        jar="C:\Users\Andrew\.android\build-cache\3f75f19d53d5ebb7ef6462067a221d2b7f4f6af3\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.3"
-        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e058df50d3a565f404f25b9ec3e645ff9df1ee76/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/0b34affd4779dbe91b4bd08ee749d86ce51d9521/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="73c80b05a390e8319d1ef7a236739cd610c8f774">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cc97d4ac842237a1bc69be8fea05e840f998d3c9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/3a18b0131825d0d44b308104907e2c895fd22f85/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="807751a24cf96566fd8675517c94d8463cf364db">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c393ed59b76398437432fb6398b4b1f6af686700/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_8f692805d2ecfddc21397a83714755224074b95c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/7271978bd4dfef3d8805746f5decca2515de8a00/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_10b111db4e6327d016a822864fed39c957250b4f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/94165995d6f32270210975452db457111f0764c5/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="bc9ea2bc291bbebc83f5b160d115c699bddc4e16">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a312a66d47e2dc751e51e13c8a6f46e77a7304ab/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/5dbb951fac120edc224c1d4c1108deea700853c8/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ef8572abf2b70081b2923f92780453fdcc54cfdd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/07929faf738c3746bde5c8554adf0c96faf807d6/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5af37b03489af20ef1a8a8e728b613ec84c4bcaa/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="c118b30c44557ef244b6b6783f578b1a0c6f0c38">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1d8ce577e46dabc15c0cb6909293d01d8758bca6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/f7f5a75aa6175e9f0cde5afbeddda54e0c8c06dc/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="6e6b94b72d7912a627fb1629c310b2bca9261f06">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cbaab8463329dca20471c995e540e090dc1ac522/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/25292943f573127fdcef1ede933ef94bc78fd553/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="bed98ea7af8c5c4202820875e856dd3eb296e22d">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_218485382460c902cb38fdf90c8290a016d865e0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/7d8639d9f6ea4cae19e1401335f9cd620fbeb627/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="bc0d71e8828a145ca4aebde8f6897608070f8863">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f067409c6684eddbd226e4e8d0ed042dbf71e02/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="89507701249388e1ed5ddcf8c41f4ce1be7831ef">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/guava-20.0_189618ea052b9fde72509d04b719161ef38aac12/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/ca8960401aefc78ef051969655daf0bce4d236ab/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="252896ce41f2a84a2849e29235e66098be7d12ee">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0e405e34b3774cb5a59ded5958caa2cf6b109922/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/core-3.3.0_8a2f1e884269df99d9553497350e16156d5a15d0/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Tyler/.android/build-cache/8052ec3d344789dbb99c8bd31114c9ff18b4a320/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/Tyler/StudioProjects/CPEN321-iNeed-KAT/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_218cb9d421f878f0822505e76c3dde4a06666234/classes.dex" />
+        sha1="ab6e491b5d7bda2f47991a30f6bfe9a8b134ff8b">
+        <dex dex="C:\Users\Andrew\workspace\Android Studio\CPEN321\CPEN321-iNeed-KAT\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_59bbd467530c189e819b841e1059be6de9026898\classes.dex" />
     </item>
 
 </items>
