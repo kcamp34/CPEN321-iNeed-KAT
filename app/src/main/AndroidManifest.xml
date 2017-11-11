@@ -43,8 +43,20 @@
             android:label="@string/title_activity_make_offer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".SentOfferActivity"
+            android:name=".AllOffersActivity"
             android:label="@string/title_activity_offer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewRecOfferActivity"
+            android:label="@string/title_activity_view_rec_offer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewSentOfferActivity"
+            android:label="@string/title_activity_view_sent_offer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewOfferActivity"
+            android:label="@string/title_activity_view_offer"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

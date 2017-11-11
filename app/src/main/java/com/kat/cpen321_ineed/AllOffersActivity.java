@@ -1,13 +1,13 @@
 package com.kat.cpen321_ineed;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
@@ -80,11 +80,24 @@ public class AllOffersActivity extends AppCompatActivity {
                                 if (offer.getReceiverID() != null && offer.getReceiverID().equals(Profile.getCurrentProfile().getId())) {
                                     recButtons.add(tempButton);
                                     ((LinearLayout) findViewById(R.id.sentOfferLinLayout)).addView(tempButton);
-                                } // TODO add else statement here if users are not able to make offers on their own posts
-                                if (offer.getSenderID() != null && offer.getSenderID().equals(Profile.getCurrentProfile().getId())) {
+                                } else if (offer.getSenderID() != null && offer.getSenderID().equals(Profile.getCurrentProfile().getId())) {
                                     sentButtons.add(tempButton);
                                     ((LinearLayout) findViewById(R.id.sentOfferLinLayout)).addView(tempButton);
                                 }
+
+                                tempButton.setOnClickListener(new View.OnClickListener() {
+                                                                  @Override
+                                                                  public void onClick(View v) {
+                                                                      Intent viewOfferIntent = new Intent(AllOffersActivity.this, ViewOfferActivity.class);
+                                                                      viewOfferIntent.putExtra("SenderID", offer.getSenderID());
+                                                                      viewOfferIntent.putExtra("ReceiverID", offer.getReceiverID());
+                                                                      viewOfferIntent.putExtra("Name", offer.getPostName());
+                                                                      viewOfferIntent.putExtra("Message", offer.getMessage());
+                                                                      viewOfferIntent.putExtra("Price", offer.getPrice());
+                                                                      startActivity(viewOfferIntent);
+                                                                  }
+                                                              }
+                                );
                             }
                             showButtons(recButtons);
                         } else {
