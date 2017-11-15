@@ -25,6 +25,7 @@ import com.facebook.login.LoginResult;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+
 /**
  * A login screen that offers login via email/password.
  */
@@ -47,6 +48,7 @@ public class LoginActivity extends AppCompatActivity {
 
     // UI references.
     private View mLoginFormView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -103,6 +105,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         mLoginFormView = findViewById(R.id.login_form);
+
     }
 
     private void updateWithToken(AccessToken currentAccessToken) {
