@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -66,7 +67,6 @@ public class ScrollingActivity extends AppCompatActivity {
         this.addPostClick();
         this.addLogoutClick();
         this.addOfferClick();
-        this.addMyPostsClick();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -104,17 +104,6 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent offerIntent = new Intent(ScrollingActivity.this, AllOffersActivity.class);
                 startActivity(offerIntent);
-            }
-        });
-    }
-
-    private void addMyPostsClick() {
-        Button myPostsButton = (Button) findViewById(R.id.buttonMyPost);
-        myPostsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myPostsIntent = new Intent(ScrollingActivity.this, MyPostsActivity.class);
-                startActivity(myPostsIntent);
             }
         });
     }
