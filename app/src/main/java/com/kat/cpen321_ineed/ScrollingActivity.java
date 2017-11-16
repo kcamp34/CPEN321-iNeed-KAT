@@ -19,6 +19,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import static android.content.ContentValues.TAG;
+import static com.kat.cpen321_ineed.R.id.buttonViewOffer;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -66,6 +67,7 @@ public class ScrollingActivity extends AppCompatActivity {
         this.addPostClick();
         this.addLogoutClick();
         this.addOfferClick();
+        //this.addViewOfferClick();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -97,7 +99,7 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
     private void addOfferClick() {
-        Button offerButton = (Button) findViewById(R.id.buttonViewOffer);
+        Button offerButton = (Button) findViewById(buttonViewOffer);
         offerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

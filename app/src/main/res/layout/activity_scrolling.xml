@@ -38,9 +38,9 @@
                 <Button
                     android:id="@+id/buttonViewOffer"
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
                     android:layout_height="wrap_content"
-                    android:text="Offers" />
+                    android:layout_weight="0.25"
+                    android:text="MESSAGE" />
 
                 <Button
                     android:id="@+id/buttonFilter"
