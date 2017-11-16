@@ -31,7 +31,7 @@ import static android.content.ContentValues.TAG;
  */
 
 public class Post {
-
+    private String postID;
     private String userID;
     private String name;
     private double price;
@@ -46,11 +46,22 @@ public class Post {
     }
 
     public Post(String name, double dollars, String description, String userID) {
+        this.postID = Long.toString(System.currentTimeMillis());
         this.userID = userID;
         this.name = name;
         this.message = description;
         this.price = dollars;
         Log.e("Post Created", this.name + " " + message + " "+ price +" "+ available +" "+ userID);
+    }
+
+    public String getID() {
+        return this.postID;
+    }
+
+    ;
+
+    public void setID(String id) {
+        this.postID = id;
     }
 
     public double getPrice(){

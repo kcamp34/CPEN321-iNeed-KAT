@@ -59,6 +59,18 @@
         <activity
             android:name=".ViewOfferActivity"
             android:label="@string/title_activity_view_offer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OffersOnPostActivity"
+            android:label="@string/title_activity_offers_on_post"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyPostsActivity"
+            android:label="@string/title_activity_my_posts"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReceivedOffersActivity"
+            android:label="@string/title_activity_received_offers"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

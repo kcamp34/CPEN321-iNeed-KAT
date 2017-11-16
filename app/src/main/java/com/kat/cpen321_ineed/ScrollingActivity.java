@@ -33,7 +33,6 @@ public class ScrollingActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (DocumentSnapshot document : task.getResult()) {
-                                final String postId = document.getId();
                                 final Post post = document.toObject(Post.class);
                                 Button tempButton = new Button(that);
                                 tempButton.setText(post.getName());
@@ -41,7 +40,7 @@ public class ScrollingActivity extends AppCompatActivity {
                                                                   @Override
                                                                   public void onClick(View v) {
                                                                       Intent viewPostIntent = new Intent(ScrollingActivity.this, ViewPostActivity.class);
-                                                                      viewPostIntent.putExtra("postId", postId);
+                                                                      viewPostIntent.putExtra("postId", post.getID());
                                                                       viewPostIntent.putExtra("UserId", post.getUserID());
                                                                       viewPostIntent.putExtra("Name", post.getName());
                                                                       viewPostIntent.putExtra("Description", post.getMessage());
@@ -67,7 +66,7 @@ public class ScrollingActivity extends AppCompatActivity {
         this.addPostClick();
         this.addLogoutClick();
         this.addOfferClick();
-        //this.addViewOfferClick();
+        this.addMyPostsClick();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -105,6 +104,17 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent offerIntent = new Intent(ScrollingActivity.this, AllOffersActivity.class);
                 startActivity(offerIntent);
+            }
+        });
+    }
+
+    private void addMyPostsClick() {
+        Button myPostsButton = (Button) findViewById(R.id.buttonMyPost);
+        myPostsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myPostsIntent = new Intent(ScrollingActivity.this, MyPostsActivity.class);
+                startActivity(myPostsIntent);
             }
         });
     }

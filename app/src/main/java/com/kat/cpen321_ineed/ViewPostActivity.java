@@ -16,7 +16,6 @@ public class ViewPostActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         final String name = getIntent().getStringExtra("Name");
         final String desc = getIntent().getStringExtra("Description");
-        final String userID = getIntent().getStringExtra("UserId");
         final double price = getIntent().getDoubleExtra("Price", 0.0);
 
         super.onCreate(savedInstanceState);
@@ -33,20 +32,45 @@ public class ViewPostActivity extends AppCompatActivity {
         TextView descView = (TextView) findViewById(R.id.textViewDescription);
         descView.setText(desc);
 
+        initOfferButton();
+        initEditButton();
+
+
+    }
+
+    private void initOfferButton() {
+        final String name = getIntent().getStringExtra("Name");
+        final String userID = getIntent().getStringExtra("UserId");
+
         Button offerButton = (Button) findViewById(R.id.buttonOffer);
         // If user id matches userID from intent then set the button to viewOffer
-        offerButton.setText("Make an offer!");
-        offerButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent makeOfferIntent = new Intent(ViewPostActivity.this, MakeOfferActivity.class);
-                makeOfferIntent.putExtra("postId", getIntent().getStringExtra("postId"));
-                makeOfferIntent.putExtra("postName", name);
-                makeOfferIntent.putExtra("recID", userID);
-                startActivity(makeOfferIntent);
-            }
-        });
+        if (Profile.getCurrentProfile().getId().equals(userID)) {
+            offerButton.setText("View offers!");
+            offerButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent viewOffersIntent = new Intent(ViewPostActivity.this, OffersOnPostActivity.class);
+                    viewOffersIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                    startActivity(viewOffersIntent);
+                }
+            });
+        } else {
+            offerButton.setText("Make an offer!");
+            offerButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent makeOfferIntent = new Intent(ViewPostActivity.this, MakeOfferActivity.class);
+                    makeOfferIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                    makeOfferIntent.putExtra("postName", name);
+                    makeOfferIntent.putExtra("recID", userID);
+                    startActivity(makeOfferIntent);
+                }
+            });
+        }
+    }
 
+    private void initEditButton() {
+        final String userID = getIntent().getStringExtra("UserId");
         if (userID.equals(Profile.getCurrentProfile().getId())) {
             Button editButton = (Button) findViewById(R.id.editPostButton);
 
@@ -61,7 +85,5 @@ public class ViewPostActivity extends AppCompatActivity {
                 }
             });
         }
-
     }
-
 }

@@ -118,4 +118,7 @@
     <string name="title_activity_view_rec_offer">ViewRecOfferActivity</string>
     <string name="title_activity_view_sent_offer">ViewSentOfferActivity</string>
     <string name="title_activity_view_offer">ViewOfferActivity</string>
+    <string name="title_activity_offers_on_post">OffersOnPostActivity</string>
+    <string name="title_activity_my_posts">MyPostsActivity</string>
+    <string name="title_activity_received_offers">ReceivedOffersActivity</string>
 </resources>
