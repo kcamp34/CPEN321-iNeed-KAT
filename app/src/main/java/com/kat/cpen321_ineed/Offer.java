@@ -34,7 +34,6 @@ public class Offer {
     public void setSenderID(String sendID) {
         this.senderID = sendID;
     }
-
     public String getSenderID() {
         return this.senderID;
     }
@@ -42,7 +41,6 @@ public class Offer {
     public void setReceiverID(String recID) {
         this.receiverID = recID;
     }
-
     public String getReceiverID() {
         return this.receiverID;
     }
@@ -50,7 +48,6 @@ public class Offer {
     public void setPrice(double price) {
         this.price = price;
     }
-
     public double getPrice() {
         return this.price;
     }
@@ -58,7 +55,6 @@ public class Offer {
     public void setMessage(String message) {
         this.message = message;
     }
-
     public String getMessage() {
         return this.message;
     }
@@ -66,11 +62,13 @@ public class Offer {
     public void setPostID(String postID) {
         this.postID = postID;
     }
-
     public String getPostID() {
         return this.postID;
     }
 
+    public void setPostName(String s) {
+        this.postName = s;
+    }
     public String getPostName() {
         return this.postName;
     }

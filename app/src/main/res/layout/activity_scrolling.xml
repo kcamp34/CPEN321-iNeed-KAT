@@ -31,28 +31,35 @@
                 <Button
                     android:id="@+id/addPostButton"
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.1"
                     android:layout_height="wrap_content"
                     android:text="+" />
 
                 <Button
                     android:id="@+id/buttonViewOffer"
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.225"
                     android:layout_height="wrap_content"
                     android:text="Offers" />
 
                 <Button
+                    android:id="@+id/buttonMyPost"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.225"
+                    android:layout_height="wrap_content"
+                    android:text="My Posts" />
+
+                <Button
                     android:id="@+id/buttonFilter"
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.225"
                     android:layout_height="wrap_content"
                     android:text="Filter" />
 
                 <Button
                     android:id="@+id/logoutButton"
                     android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    android:layout_weight="0.225"
                     android:layout_height="wrap_content"
                     android:text="Logout" />
 
