@@ -7,6 +7,7 @@
     android:fitsSystemWindows="true"
     tools:context="com.kat.cpen321_ineed.ScrollingActivity">
 
+
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
@@ -25,39 +26,74 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/addPostButton"
-                    android:layout_width="0dp"
-                    android:layout_weight="0.25"
-                    android:layout_height="wrap_content"
-                    android:text="+" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/buttonViewOffer"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.25"
-                    android:text="MESSAGE" />
+                    <Button
+                        android:id="@+id/addPostButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="wrap_content"
+                        android:text="+" />
 
-                <Button
-                    android:id="@+id/buttonFilter"
-                    android:layout_width="0dp"
-                    android:layout_weight="0.25"
-                    android:layout_height="wrap_content"
-                    android:text="Filter" />
+                    <Button
+                        android:id="@+id/buttonViewOffer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:text="MESSAGE" />
 
-                <Button
-                    android:id="@+id/logoutButton"
-                    android:layout_width="0dp"
-                    android:layout_weight="0.25"
+                    <Button
+                        android:id="@+id/buttonFilter"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="wrap_content"
+                        android:text="Filter" />
+
+                    <Button
+                        android:id="@+id/logoutButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.25"
+                        android:layout_height="wrap_content"
+                        android:text="Logout" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Logout" />
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/checkboxOwned"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.15"
+                        android:text="Mine" />
+
+                    <EditText
+                        android:id="@+id/editTextSearch"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:hint="Search" />
+
+                    <Button
+                        android:id="@+id/buttonSearch"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:text="Search" />
+
+                </LinearLayout>
 
             </LinearLayout>
-
 
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>

@@ -6,12 +6,15 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 
+import com.facebook.Profile;
 import com.facebook.login.LoginManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -19,13 +22,24 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import static android.content.ContentValues.TAG;
+import static com.kat.cpen321_ineed.R.id.buttonSearch;
 import static com.kat.cpen321_ineed.R.id.buttonViewOffer;
 
 public class ScrollingActivity extends AppCompatActivity {
 
-    private void showAllPosts() {
+    Set<Button> activeButtons = new HashSet<>();
+
+    private void showPosts() {
         final Context that = this;
+
+        for (Button b : activeButtons) {
+            ((ViewGroup) b.getParent()).removeView(b);
+        }
+        activeButtons.clear();
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("Posts")
                 .get()
@@ -50,7 +64,19 @@ public class ScrollingActivity extends AppCompatActivity {
                                                                   }
                                                               }
                                 );
-                                ((LinearLayout) findViewById(R.id.scrollingLinLayout)).addView(tempButton);
+                                EditText et = (EditText) findViewById(R.id.editTextSearch);
+                                String query = et.getText().toString();
+
+                                if (((CheckBox) findViewById(R.id.checkboxOwned)).isChecked()) {
+                                    String s = Profile.getCurrentProfile().toString();
+                                    String s2 = post.getUserID();
+
+                                    if (post.getUserID().equals(Profile.getCurrentProfile().getId().toString())) {
+                                        activateQueriedButtons(query, tempButton, post);
+                                    }
+                                } else {
+                                    activateQueriedButtons(query, tempButton, post);
+                                }
                             }
                         } else {
                             Log.w(TAG, "Error getting documents.", task.getException());
@@ -63,10 +89,11 @@ public class ScrollingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
-        showAllPosts();
+        showPosts();
         this.addPostClick();
         this.addLogoutClick();
         this.addOfferClick();
+        this.addSearchClick();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -106,6 +133,26 @@ public class ScrollingActivity extends AppCompatActivity {
                 startActivity(offerIntent);
             }
         });
+    }
+
+    private void addSearchClick() {
+        Button searchButton = (Button) findViewById(buttonSearch);
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPosts();
+            }
+        });
+    }
+
+    private void activateQueriedButtons(String query, Button tempButton, Post post) {
+        if (query.length() == 0) {
+            activeButtons.add(tempButton);
+            ((LinearLayout) findViewById(R.id.scrollingLinLayout)).addView(tempButton);
+        } else if (post.getName().contains(query) || post.getMessage().contains(query)) {
+            activeButtons.add(tempButton);
+            ((LinearLayout) findViewById(R.id.scrollingLinLayout)).addView(tempButton);
+        }
     }
 
 }
