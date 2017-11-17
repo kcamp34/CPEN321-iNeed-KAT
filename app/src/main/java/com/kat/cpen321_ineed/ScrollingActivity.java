@@ -68,9 +68,6 @@ public class ScrollingActivity extends AppCompatActivity {
                                 String query = et.getText().toString();
 
                                 if (((CheckBox) findViewById(R.id.checkboxOwned)).isChecked()) {
-                                    String s = Profile.getCurrentProfile().toString();
-                                    String s2 = post.getUserID();
-
                                     if (post.getUserID().equals(Profile.getCurrentProfile().getId().toString())) {
                                         activateQueriedButtons(query, tempButton, post);
                                     }
@@ -94,6 +91,7 @@ public class ScrollingActivity extends AppCompatActivity {
         this.addLogoutClick();
         this.addOfferClick();
         this.addSearchClick();
+        this.addCheckClick();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
     }
@@ -149,10 +147,20 @@ public class ScrollingActivity extends AppCompatActivity {
         if (query.length() == 0) {
             activeButtons.add(tempButton);
             ((LinearLayout) findViewById(R.id.scrollingLinLayout)).addView(tempButton);
-        } else if (post.getName().contains(query) || post.getMessage().contains(query)) {
+        } else if (post.getName().toLowerCase().contains(query.toLowerCase()) ||
+                post.getMessage().toLowerCase().contains(query.toLowerCase())) {
             activeButtons.add(tempButton);
             ((LinearLayout) findViewById(R.id.scrollingLinLayout)).addView(tempButton);
         }
+    }
+
+    private void addCheckClick() {
+        findViewById(R.id.checkboxOwned).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPosts();
+            }
+        });
     }
 
 }
