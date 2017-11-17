@@ -45,15 +45,8 @@
                         android:id="@+id/buttonViewOffer"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.25"
-                        android:text="MESSAGE" />
-
-                    <Button
-                        android:id="@+id/buttonFilter"
-                        android:layout_width="0dp"
-                        android:layout_weight="0.25"
-                        android:layout_height="wrap_content"
-                        android:text="Filter" />
+                        android:layout_weight="0.5"
+                        android:text="MESSAGES" />
 
                     <Button
                         android:id="@+id/logoutButton"

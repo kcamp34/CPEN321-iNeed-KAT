@@ -1,6 +1,7 @@
 package com.kat.cpen321_ineed;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -42,9 +43,22 @@ public class OffersOnPostActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (DocumentSnapshot document : task.getResult()) {
                                 final Offer offer = document.toObject(Offer.class);
-                                Button tempButton = new Button(that);
+                                final Button tempButton = new Button(that);
+
                                 tempButton.setText(offer.getMessage());
                                 if (offer.getPostID().equals(getIntent().getStringExtra("postId"))) {
+                                    tempButton.setOnClickListener(new View.OnClickListener() {
+                                        @Override
+                                        public void onClick(View v) {
+                                            Intent viewOfferIntent = new Intent(OffersOnPostActivity.this, ViewOfferActivity.class);
+                                            viewOfferIntent.putExtra("Name", offer.getPostName());
+                                            viewOfferIntent.putExtra("Message", offer.getMessage());
+                                            viewOfferIntent.putExtra("SenderID", offer.getSenderID());
+                                            viewOfferIntent.putExtra("ReceiverID", offer.getReceiverID());
+                                            viewOfferIntent.putExtra("Price", offer.getPrice());
+                                            startActivity(viewOfferIntent);
+                                        }
+                                    });
                                     ((LinearLayout) findViewById(R.id.offers_on_post_lin_layout)).addView(tempButton);
                                 }
                             }

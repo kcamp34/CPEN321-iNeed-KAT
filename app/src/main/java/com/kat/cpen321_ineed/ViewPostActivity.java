@@ -51,6 +51,10 @@ public class ViewPostActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent viewOffersIntent = new Intent(ViewPostActivity.this, OffersOnPostActivity.class);
                     viewOffersIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                    viewOffersIntent.putExtra("Price", getIntent().getStringExtra("Price"));
+                    viewOffersIntent.putExtra("Message", getIntent().getStringExtra("Message"));
+                    viewOffersIntent.putExtra("SenderID", getIntent().getStringExtra("SenderID"));
+                    viewOffersIntent.putExtra("ReceiverID", getIntent().getStringExtra("ReceiverID"));
                     startActivity(viewOffersIntent);
                 }
             });
