@@ -33,6 +33,7 @@ public class OffersOnPostActivity extends AppCompatActivity {
     }
 
     private void getAllOffers() {
+        final String postId = getIntent().getStringExtra("postId");
         final Context that = this;
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("Offers")
@@ -56,6 +57,7 @@ public class OffersOnPostActivity extends AppCompatActivity {
                                             viewOfferIntent.putExtra("SenderID", offer.getSenderID());
                                             viewOfferIntent.putExtra("ReceiverID", offer.getReceiverID());
                                             viewOfferIntent.putExtra("Price", offer.getPrice());
+                                            viewOfferIntent.putExtra("postId", postId);
                                             startActivity(viewOfferIntent);
                                         }
                                     });

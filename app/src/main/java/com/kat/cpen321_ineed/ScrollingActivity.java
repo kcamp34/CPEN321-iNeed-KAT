@@ -36,6 +36,8 @@ public class ScrollingActivity extends AppCompatActivity {
     private void showPosts() {
         final Context that = this;
 
+        final String idToRemove = getIntent().getStringExtra("postId");
+
         for (Button b : activeButtons) {
             ((ViewGroup) b.getParent()).removeView(b);
         }
@@ -49,6 +51,15 @@ public class ScrollingActivity extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (DocumentSnapshot document : task.getResult()) {
                                 final Post post = document.toObject(Post.class);
+
+                                if (idToRemove != null && post.getID().equals(idToRemove)) {
+                                    post.setAvailable(false);
+                                    Post.editPostDB(post, idToRemove);
+                                }
+                                if (!post.getAvailable()) {
+                                    continue;
+                                }
+
                                 Button tempButton = new Button(that);
                                 tempButton.setText(post.getName());
                                 tempButton.setOnClickListener(new View.OnClickListener() {

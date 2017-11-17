@@ -50,11 +50,14 @@ public class ViewOfferActivity extends AppCompatActivity {
     }
 
     private void offerButtonSetup(Button leftButton, Button rightButton) {
+        final String postId = getIntent().getStringExtra("postId");
         leftButton.setText("Accept");
         leftButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent acceptIntent = new Intent(ViewOfferActivity.this, ScrollingActivity.class);
+                acceptIntent.putExtra("Available", false);
+                acceptIntent.putExtra("postId", postId);
                 startActivity(acceptIntent);
             }
         });

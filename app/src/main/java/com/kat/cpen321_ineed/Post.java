@@ -36,7 +36,7 @@ public class Post {
     private String name;
     private double price;
     private String message;
-    private boolean available = true;
+    private boolean available;
 
 
     public Post(){
@@ -51,6 +51,7 @@ public class Post {
         this.name = name;
         this.message = description;
         this.price = dollars;
+        this.available = true;
         Log.e("Post Created", this.name + " " + message + " "+ price +" "+ available +" "+ userID);
     }
 
@@ -120,6 +121,8 @@ public class Post {
         map.put("name", name);
         map.put("price", price);
         map.put("message", message);
+        map.put("postId", postID);
+        map.put("available", available);
 
         return map;
     }
