@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -19,14 +17,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 import static android.content.ContentValues.TAG;
 
@@ -60,7 +50,7 @@ public class MyPostsActivity extends AppCompatActivity {
                                         @Override
                                         public void onClick(View v) {
                                             Intent seeOffersIntent = new Intent(MyPostsActivity.this, ViewPostActivity.class);
-                                            seeOffersIntent.putExtra("postId", post.getID());
+                                            seeOffersIntent.putExtra("postId", post.getPostID());
                                             seeOffersIntent.putExtra("UserId", post.getUserID());
                                             seeOffersIntent.putExtra("Name", post.getName());
                                             seeOffersIntent.putExtra("Description", post.getMessage());

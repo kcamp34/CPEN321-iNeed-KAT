@@ -85,6 +85,9 @@ public class ViewPostActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     Intent editPostIntent = new Intent(ViewPostActivity.this, PostActivity.class);
                     editPostIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                    editPostIntent.putExtra("Name", getIntent().getStringExtra("Name"));
+                    editPostIntent.putExtra("Description", getIntent().getStringExtra("Description"));
+                    editPostIntent.putExtra("Price", getIntent().getDoubleExtra("Price", 0.0));
                     startActivity(editPostIntent);
                 }
             });

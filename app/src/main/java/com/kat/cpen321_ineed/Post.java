@@ -55,13 +55,13 @@ public class Post {
         Log.e("Post Created", this.name + " " + message + " "+ price +" "+ available +" "+ userID);
     }
 
-    public String getID() {
+    public String getPostID() {
         return this.postID;
     }
 
     ;
 
-    public void setID(String id) {
+    public void setPostID(String id) {
         this.postID = id;
     }
 
@@ -98,12 +98,16 @@ public class Post {
     public void commitDB(){
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         // Add a new document with a generated ID
+        final Post that = this;
         db.collection("Posts")
                 .add(this)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
                     public void onSuccess(DocumentReference documentReference) {
                         Log.d(TAG, "DocumentSnapshot added with ID: " + documentReference.getId());
+                        String newId = documentReference.getId();
+                        that.setPostID(newId);
+                        documentReference.update(that.toMap());
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
@@ -117,11 +121,11 @@ public class Post {
     public Map<String, Object> toMap() {
         Map<String, Object> map = new HashMap<String, Object>();
 
-        map.put("userId", userID);
+        map.put("userID", userID);
         map.put("name", name);
         map.put("price", price);
         map.put("message", message);
-        map.put("postId", postID);
+        map.put("postID", postID);
         map.put("available", available);
 
         return map;
@@ -133,5 +137,6 @@ public class Post {
         DocumentReference postRef = db.collection("Posts").document(postId);
 
         postRef.update(post.toMap());
+
     }
 }

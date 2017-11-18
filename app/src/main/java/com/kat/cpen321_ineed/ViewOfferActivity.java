@@ -40,7 +40,7 @@ public class ViewOfferActivity extends AppCompatActivity {
 
         Button leftButton = (Button) findViewById(R.id.buttonOfferLeft);
         Button rightButton = (Button) findViewById(R.id.buttonOfferRight);
-        // If receiver ID matches the current profile thenoffer was received. Choose to accept or reject
+        // If receiver ID matches the current profile then offer was received. Choose to accept or reject
         // If sender ID matches the current profile then offer was sent. Choose to edit or cancel
         if (senderID != null && senderID.equals(Profile.getCurrentProfile().getId())) {
             senderButtonSetup(leftButton, rightButton);

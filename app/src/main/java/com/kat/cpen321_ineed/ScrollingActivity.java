@@ -52,21 +52,20 @@ public class ScrollingActivity extends AppCompatActivity {
                             for (DocumentSnapshot document : task.getResult()) {
                                 final Post post = document.toObject(Post.class);
 
-                                if (idToRemove != null && post.getID().equals(idToRemove)) {
+                                if (idToRemove != null && post.getPostID().equals(idToRemove)) {
                                     post.setAvailable(false);
                                     Post.editPostDB(post, idToRemove);
                                 }
                                 if (!post.getAvailable()) {
                                     continue;
                                 }
-
                                 Button tempButton = new Button(that);
                                 tempButton.setText(post.getName());
                                 tempButton.setOnClickListener(new View.OnClickListener() {
                                                                   @Override
                                                                   public void onClick(View v) {
                                                                       Intent viewPostIntent = new Intent(ScrollingActivity.this, ViewPostActivity.class);
-                                                                      viewPostIntent.putExtra("postId", post.getID());
+                                                                      viewPostIntent.putExtra("postId", post.getPostID());
                                                                       viewPostIntent.putExtra("UserId", post.getUserID());
                                                                       viewPostIntent.putExtra("Name", post.getName());
                                                                       viewPostIntent.putExtra("Description", post.getMessage());
