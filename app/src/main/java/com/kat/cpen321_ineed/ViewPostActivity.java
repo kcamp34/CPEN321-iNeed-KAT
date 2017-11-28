@@ -92,6 +92,22 @@ public class ViewPostActivity extends AppCompatActivity {
                     startActivity(editPostIntent);
                 }
             });
+
+            Button deleteButton = (Button) findViewById(R.id.deletePostButton);
+
+            deleteButton.setVisibility(View.VISIBLE);
+
+            deleteButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent deleteIntent = new Intent(ViewPostActivity.this, ScrollingActivity.class);
+                    deleteIntent.putExtra("Available", false);
+                    deleteIntent.putExtra("postID", getIntent().getStringExtra("postID"));
+                    startActivity(deleteIntent);
+                }
+            });
+        } else {
+            
         }
     }
 }
