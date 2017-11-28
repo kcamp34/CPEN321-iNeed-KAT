@@ -28,7 +28,8 @@ public class MakeOfferActivity extends AppCompatActivity {
                         Double.parseDouble(price.getText().toString()),
                         message.getText().toString(),
                         getIntent().getStringExtra("postId"),
-                        getIntent().getStringExtra("postName"));
+                        getIntent().getStringExtra("postName"),
+                        getIntent().getStringExtra("status"));
 
                 offer.commitDB();
 

@@ -23,6 +23,14 @@ public class ViewOfferActivity extends AppCompatActivity {
         final String senderID = getIntent().getStringExtra("SenderID");
         final String receiverID = getIntent().getStringExtra("ReceiverID");
         final double price = getIntent().getDoubleExtra("Price", 0.0);
+        final String status = getIntent().getStringExtra("Status");
+
+        String statusVal = "In Progress";
+
+        if (status == "False")
+            statusVal = "Accepted";
+        else
+            statusVal = "In Progress";
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_offer);
@@ -38,8 +46,13 @@ public class ViewOfferActivity extends AppCompatActivity {
         TextView descView = (TextView) findViewById(R.id.textViewDescription);
         descView.setText(message);
 
+        TextView textViewStatus = (TextView) findViewById(R.id.textViewStatus);
+        textViewStatus.setText(statusVal);
+
+
         Button leftButton = (Button) findViewById(R.id.buttonOfferLeft);
         Button rightButton = (Button) findViewById(R.id.buttonOfferRight);
+
         // If receiver ID matches the current profile then offer was received. Choose to accept or reject
         // If sender ID matches the current profile then offer was sent. Choose to edit or cancel
         if (senderID != null && senderID.equals(Profile.getCurrentProfile().getId())) {
@@ -58,6 +71,7 @@ public class ViewOfferActivity extends AppCompatActivity {
                 Intent acceptIntent = new Intent(ViewOfferActivity.this, ScrollingActivity.class);
                 acceptIntent.putExtra("Available", false);
                 acceptIntent.putExtra("postId", postId);
+                acceptIntent.putExtra("Status", false);
                 startActivity(acceptIntent);
             }
         });

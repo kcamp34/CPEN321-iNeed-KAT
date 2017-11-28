@@ -17,18 +17,20 @@ public class Offer {
     private double price;
     private String message;
     private String postID;
+    private String status;
 
 
     private Offer() {
     }
 
-    public Offer(String senderID, String receiverID, double price, String message, String postID, String postName) {
+    public Offer(String senderID, String receiverID, double price, String message, String postID, String postName, String status) {
         this.postName = postName;
         this.senderID = senderID;
         this.receiverID = receiverID;
         this.price = price;
         this.message = message;
         this.postID = postID;
+        this.status = status;
     }
 
     public void setSenderID(String sendID) {
@@ -71,6 +73,14 @@ public class Offer {
     }
     public String getPostName() {
         return this.postName;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getStatus() {
+        return this.status;
     }
 
     public void commitDB() {
