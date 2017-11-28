@@ -2,8 +2,6 @@ package com.kat.cpen321_ineed;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -11,7 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.facebook.Profile;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 public class ViewOfferActivity extends AppCompatActivity {
 
@@ -23,6 +20,8 @@ public class ViewOfferActivity extends AppCompatActivity {
         final String senderID = getIntent().getStringExtra("SenderID");
         final String receiverID = getIntent().getStringExtra("ReceiverID");
         final double price = getIntent().getDoubleExtra("Price", 0.0);
+        final boolean accepted = getIntent().getBooleanExtra("Accepted", false);
+        final boolean rejected = getIntent().getBooleanExtra("Rejected", false);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_offer);
@@ -38,6 +37,12 @@ public class ViewOfferActivity extends AppCompatActivity {
         TextView descView = (TextView) findViewById(R.id.textViewDescription);
         descView.setText(message);
 
+        if (accepted) {
+            ((TextView) findViewById(R.id.textView_offer_status)).setText("Offer Accepted");
+        } else if (rejected) {
+            ((TextView) findViewById(R.id.textView_offer_status)).setText("Offer Rejected");
+        }
+
         Button leftButton = (Button) findViewById(R.id.buttonOfferLeft);
         Button rightButton = (Button) findViewById(R.id.buttonOfferRight);
         // If receiver ID matches the current profile then offer was received. Choose to accept or reject
@@ -50,14 +55,26 @@ public class ViewOfferActivity extends AppCompatActivity {
     }
 
     private void offerButtonSetup(Button leftButton, Button rightButton) {
-        final String postId = getIntent().getStringExtra("postId");
+        final String postId = getIntent().getStringExtra("postID");
         leftButton.setText("Accept");
         leftButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Offer newOffer = new Offer(getIntent().getStringExtra("SenderID"),
+                        getIntent().getStringExtra("ReceiverID"),
+                        getIntent().getDoubleExtra("Price", 0.0),
+                        getIntent().getStringExtra("Message"),
+                        getIntent().getStringExtra("postID"),
+                        getIntent().getStringExtra("postName"));
+                newOffer.setAccepted(true);
+                newOffer.setId(getIntent().getStringExtra("offerID"));
+
+                Offer.editOfferDB(newOffer, newOffer.getId());
+
                 Intent acceptIntent = new Intent(ViewOfferActivity.this, ScrollingActivity.class);
                 acceptIntent.putExtra("Available", false);
-                acceptIntent.putExtra("postId", postId);
+                acceptIntent.putExtra("postID", postId);
                 startActivity(acceptIntent);
             }
         });
@@ -66,6 +83,18 @@ public class ViewOfferActivity extends AppCompatActivity {
         rightButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Offer newOffer = new Offer(getIntent().getStringExtra("SenderID"),
+                        getIntent().getStringExtra("ReceiverID"),
+                        getIntent().getDoubleExtra("Price", 0.0),
+                        getIntent().getStringExtra("Message"),
+                        getIntent().getStringExtra("postID"),
+                        getIntent().getStringExtra("postName"));
+                newOffer.setRejected(true);
+                newOffer.setId(getIntent().getStringExtra("offerID"));
+
+                Offer.editOfferDB(newOffer, newOffer.getId());
+
                 Intent rejectIntent = new Intent(ViewOfferActivity.this, ScrollingActivity.class);
                 startActivity(rejectIntent);
             }
@@ -77,7 +106,15 @@ public class ViewOfferActivity extends AppCompatActivity {
         leftButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent editIntent = new Intent(ViewOfferActivity.this, ScrollingActivity.class);
+                Intent editIntent = new Intent(ViewOfferActivity.this, MakeOfferActivity.class);
+
+                editIntent.putExtra("offerID", getIntent().getStringExtra("offerID"));
+                editIntent.putExtra("Message", getIntent().getStringExtra("Message"));
+                editIntent.putExtra("Price", getIntent().getDoubleExtra("Price", 0));
+                editIntent.putExtra("postID", getIntent().getStringExtra("postID"));
+                editIntent.putExtra("SenderID", getIntent().getStringExtra("SenderID"));
+                editIntent.putExtra("ReceiverID", getIntent().getStringExtra("ReceiverID"));
+                editIntent.putExtra("postName", getIntent().getStringExtra("postName"));
                 startActivity(editIntent);
             }
         });
@@ -87,6 +124,18 @@ public class ViewOfferActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent cancelIntent = new Intent(ViewOfferActivity.this, ScrollingActivity.class);
+
+                Offer newOffer = new Offer(Profile.getCurrentProfile().getId(),
+                        getIntent().getStringExtra("ReceiverID"),
+                        getIntent().getDoubleExtra("Price", 0.0),
+                        getIntent().getStringExtra("Message"),
+                        getIntent().getStringExtra("postID"),
+                        getIntent().getStringExtra("postName"));
+                newOffer.setActive(false);
+                newOffer.setId(getIntent().getStringExtra("offerID"));
+
+                Offer.editOfferDB(newOffer, newOffer.getId());
+
                 startActivity(cancelIntent);
             }
         });

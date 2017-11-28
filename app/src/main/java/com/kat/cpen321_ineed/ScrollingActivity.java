@@ -36,7 +36,7 @@ public class ScrollingActivity extends AppCompatActivity {
     private void showPosts() {
         final Context that = this;
 
-        final String idToRemove = getIntent().getStringExtra("postId");
+        final String idToRemove = getIntent().getStringExtra("postID");
 
         for (Button b : activeButtons) {
             ((ViewGroup) b.getParent()).removeView(b);
@@ -65,7 +65,7 @@ public class ScrollingActivity extends AppCompatActivity {
                                                                   @Override
                                                                   public void onClick(View v) {
                                                                       Intent viewPostIntent = new Intent(ScrollingActivity.this, ViewPostActivity.class);
-                                                                      viewPostIntent.putExtra("postId", post.getPostID());
+                                                                      viewPostIntent.putExtra("postID", post.getPostID());
                                                                       viewPostIntent.putExtra("UserId", post.getUserID());
                                                                       viewPostIntent.putExtra("Name", post.getName());
                                                                       viewPostIntent.putExtra("Description", post.getMessage());

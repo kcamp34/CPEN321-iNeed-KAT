@@ -33,7 +33,7 @@ public class OffersOnPostActivity extends AppCompatActivity {
     }
 
     private void getAllOffers() {
-        final String postId = getIntent().getStringExtra("postId");
+        final String postId = getIntent().getStringExtra("postID");
         final Context that = this;
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         db.collection("Offers")
@@ -47,17 +47,21 @@ public class OffersOnPostActivity extends AppCompatActivity {
                                 final Button tempButton = new Button(that);
 
                                 tempButton.setText(offer.getMessage());
-                                if (offer.getPostID().equals(getIntent().getStringExtra("postId"))) {
+                                if (offer.getPostID().equals(getIntent().getStringExtra("postID"))) {
                                     tempButton.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View v) {
                                             Intent viewOfferIntent = new Intent(OffersOnPostActivity.this, ViewOfferActivity.class);
-                                            viewOfferIntent.putExtra("Name", offer.getPostName());
-                                            viewOfferIntent.putExtra("Message", offer.getMessage());
+                                            viewOfferIntent.putExtra("offerID", offer.getId());
+                                            viewOfferIntent.putExtra("postID", offer.getPostID());
                                             viewOfferIntent.putExtra("SenderID", offer.getSenderID());
                                             viewOfferIntent.putExtra("ReceiverID", offer.getReceiverID());
+                                            viewOfferIntent.putExtra("Name", offer.getPostName());
+                                            viewOfferIntent.putExtra("Message", offer.getMessage());
                                             viewOfferIntent.putExtra("Price", offer.getPrice());
-                                            viewOfferIntent.putExtra("postId", postId);
+                                            viewOfferIntent.putExtra("postName", offer.getPostName());
+                                            viewOfferIntent.putExtra("Accepted", offer.getAccepted());
+                                            viewOfferIntent.putExtra("Rejected", offer.getRejected());
                                             startActivity(viewOfferIntent);
                                         }
                                     });

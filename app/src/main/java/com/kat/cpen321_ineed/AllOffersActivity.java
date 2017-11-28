@@ -77,10 +77,10 @@ public class AllOffersActivity extends AppCompatActivity {
                                 tempButton.setVisibility(View.GONE);
 
                                 // Block adds the offers relevent to the user to the correct sets in the form of buttons. Other offers are ignored
-                                if (offer.getReceiverID() != null && offer.getReceiverID().equals(Profile.getCurrentProfile().getId())) {
+                                if (offer.getActive() && offer.getReceiverID().equals(Profile.getCurrentProfile().getId())) {
                                     recButtons.add(tempButton);
                                     ((LinearLayout) findViewById(R.id.sentOfferLinLayout)).addView(tempButton);
-                                } else if (offer.getSenderID() != null && offer.getSenderID().equals(Profile.getCurrentProfile().getId())) {
+                                } else if (offer.getActive() && offer.getSenderID().equals(Profile.getCurrentProfile().getId())) {
                                     sentButtons.add(tempButton);
                                     ((LinearLayout) findViewById(R.id.sentOfferLinLayout)).addView(tempButton);
                                 }
@@ -89,11 +89,16 @@ public class AllOffersActivity extends AppCompatActivity {
                                                                   @Override
                                                                   public void onClick(View v) {
                                                                       Intent viewOfferIntent = new Intent(AllOffersActivity.this, ViewOfferActivity.class);
+                                                                      viewOfferIntent.putExtra("offerID", offer.getId());
+                                                                      viewOfferIntent.putExtra("postID", offer.getPostID());
                                                                       viewOfferIntent.putExtra("SenderID", offer.getSenderID());
                                                                       viewOfferIntent.putExtra("ReceiverID", offer.getReceiverID());
                                                                       viewOfferIntent.putExtra("Name", offer.getPostName());
                                                                       viewOfferIntent.putExtra("Message", offer.getMessage());
                                                                       viewOfferIntent.putExtra("Price", offer.getPrice());
+                                                                      viewOfferIntent.putExtra("postName", offer.getPostName());
+                                                                      viewOfferIntent.putExtra("Accepted", offer.getAccepted());
+                                                                      viewOfferIntent.putExtra("Rejected", offer.getRejected());
                                                                       startActivity(viewOfferIntent);
                                                                   }
                                                               }

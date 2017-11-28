@@ -20,7 +20,7 @@ public class PostActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         this.addButtonClick();
 
-        final String postId = getIntent().getStringExtra("postId");
+        final String postId = getIntent().getStringExtra("postID");
         if (postId != null) {
 
             ((EditText) findViewById(R.id.NameField)).setText(getIntent().getStringExtra("Name"));
@@ -53,7 +53,7 @@ public class PostActivity extends AppCompatActivity {
                             description.getText().toString(),
                             Profile.getCurrentProfile().getId());
 
-                    String postId = getIntent().getStringExtra("postId");
+                    String postId = getIntent().getStringExtra("postID");
                     if (postId == null) {
                         newPost.commitDB();
                     } else {

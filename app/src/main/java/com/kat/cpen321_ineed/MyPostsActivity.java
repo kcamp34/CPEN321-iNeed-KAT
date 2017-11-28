@@ -50,7 +50,7 @@ public class MyPostsActivity extends AppCompatActivity {
                                         @Override
                                         public void onClick(View v) {
                                             Intent seeOffersIntent = new Intent(MyPostsActivity.this, ViewPostActivity.class);
-                                            seeOffersIntent.putExtra("postId", post.getPostID());
+                                            seeOffersIntent.putExtra("postID", post.getPostID());
                                             seeOffersIntent.putExtra("UserId", post.getUserID());
                                             seeOffersIntent.putExtra("Name", post.getName());
                                             seeOffersIntent.putExtra("Description", post.getMessage());

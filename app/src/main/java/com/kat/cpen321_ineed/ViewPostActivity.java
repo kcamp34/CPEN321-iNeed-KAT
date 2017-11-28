@@ -50,11 +50,12 @@ public class ViewPostActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent viewOffersIntent = new Intent(ViewPostActivity.this, OffersOnPostActivity.class);
-                    viewOffersIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                    viewOffersIntent.putExtra("postID", getIntent().getStringExtra("postID"));
                     viewOffersIntent.putExtra("Price", getIntent().getStringExtra("Price"));
                     viewOffersIntent.putExtra("Message", getIntent().getStringExtra("Message"));
                     viewOffersIntent.putExtra("SenderID", getIntent().getStringExtra("SenderID"));
                     viewOffersIntent.putExtra("ReceiverID", getIntent().getStringExtra("ReceiverID"));
+                    viewOffersIntent.putExtra("postName", name);
                     startActivity(viewOffersIntent);
                 }
             });
@@ -64,9 +65,9 @@ public class ViewPostActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent makeOfferIntent = new Intent(ViewPostActivity.this, MakeOfferActivity.class);
-                    makeOfferIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                    makeOfferIntent.putExtra("postID", getIntent().getStringExtra("postID"));
                     makeOfferIntent.putExtra("postName", name);
-                    makeOfferIntent.putExtra("recID", userID);
+                    makeOfferIntent.putExtra("ReceiverID", userID);
                     startActivity(makeOfferIntent);
                 }
             });
@@ -84,7 +85,7 @@ public class ViewPostActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent editPostIntent = new Intent(ViewPostActivity.this, PostActivity.class);
-                    editPostIntent.putExtra("postId", getIntent().getStringExtra("postId"));
+                    editPostIntent.putExtra("postID", getIntent().getStringExtra("postID"));
                     editPostIntent.putExtra("Name", getIntent().getStringExtra("Name"));
                     editPostIntent.putExtra("Description", getIntent().getStringExtra("Description"));
                     editPostIntent.putExtra("Price", getIntent().getDoubleExtra("Price", 0.0));
